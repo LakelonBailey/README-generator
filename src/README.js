@@ -1,8 +1,10 @@
 module.exports = READMEdata => {
-    const {title, description, install_instructions, usage_info, contrib_guide, test_instructions, licenses, github, email} = READMEdata;
+    const {badge, title, description, install_instructions, usage_info, contrib_guide, test_instructions, license, github, email} = READMEdata;
 
 
-    return`# ${title}
+    return`${badge}
+    
+# ${title}
 
 ## Description
 ${description}
@@ -22,6 +24,7 @@ ${install_instructions}
 ${usage_info}
 
 ## License
+This project holds the ${license} license.
 
 ## Contribution
 ${contrib_guide}

@@ -2,6 +2,15 @@ const fs = require('fs');
 const inquirer = require('inquirer')
 const generateREADME = require('./src/README')
 
+
+const licenseBadges = {
+    'ISC': '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)',
+    'MIT': '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
+    'APACHE 2.0': '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
+    'GPL v3': '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)',
+    'BSD 3-Clause': '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)',
+    'None': ''
+}
 const promptUser = () => {
     return inquirer.prompt([
         {
@@ -89,10 +98,10 @@ const promptUser = () => {
             }
         },
         {
-            type: 'checkbox',
-            name: 'licenses',
+            type: 'list',
+            name: 'license',
             message: 'Please select your licenses from the following choices:',
-            choices: ['ISC','MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
+            choices: ['ISC','MIT', 'APACHE 2.0', 'GPL v3', 'BSD 3-Clause', 'None']
         },
         {
             type: 'input',
@@ -128,6 +137,7 @@ const promptUser = () => {
 
 promptUser()
     .then(data => {
+        data.badge = licenseBadges[data.license]
         console.log(data)
         const readmeText = generateREADME(data)
         fs.writeFile('./README.md', readmeText, err => {
