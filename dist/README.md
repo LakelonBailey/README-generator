@@ -1,9 +1,9 @@
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
-## Professional README.md Generator
+# Example generated README.md
 
 ## Description
-This project provides users the ability to easily generate a professional README.md file
+<Insert description here>
 
 ## Table of Contents 
 - [Installation](#installation)
@@ -14,19 +14,19 @@ This project provides users the ability to easily generate a professional README
 - [Questions](#questions)
 
 ## Installation
-This application can be installed by cloning the Github repository at https://github.com/LakelonBailey/PasswordGenerator
+<insert installation instructions here>
 
 ## Usage
-Once the repository is cloned, enter the directory that contains index.js. Then, run the command  'npm install inquirer' to install the command line prompt package. Next, simply run 'node index'
+<insert usage information here>
 
 ## License
 This project holds the ISC license.
 
 ## Contribution
-Contribution unavailable
+<insert contribution instructions here>
 
 ## Testing
-This project can be tested by following the instructions for usage and then inspecting the generated README.md file. 
+<insert testing instructions here>
 
 ## Questions
 - Github: LakelonBailey - https://github.com/LakelonBailey
