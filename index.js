@@ -89,6 +89,12 @@ const promptUser = () => {
             }
         },
         {
+            type: 'checkbox',
+            name: 'licenses',
+            message: 'Please select your licenses from the following choices:',
+            choices: ['ISC','MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
+        },
+        {
             type: 'input',
             name: 'github',
             message: 'What is your Github username? (Required):',
@@ -122,6 +128,9 @@ const promptUser = () => {
 
 promptUser()
     .then(data => {
-        readmeText = generateREADME(data)
-        fs.writeFile('./dist/README.md')
+        console.log(data)
+        const readmeText = generateREADME(data)
+        fs.writeFile('./README.md', readmeText, err => {
+            if (err) throw new Error(err)
+        })
     })
