@@ -14,8 +14,8 @@ ${description}
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributing](#contributing)
-- [Test](#tests)
+- [Contribution](#contribution)
+- [Testing](#testing)
 - [Questions](#questions)
 
 ## Installation
