@@ -2,7 +2,7 @@ const fs = require('fs');
 const inquirer = require('inquirer')
 const generateREADME = require('./src/README')
 
-
+// Matches a chosen license to its badge link. 
 const licenseBadges = {
     'ISC': '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)',
     'MIT': '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
@@ -11,6 +11,8 @@ const licenseBadges = {
     'BSD 3-Clause': '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)',
     'None': ''
 }
+
+// Gathers all necessary data from the command line. 
 const promptUser = () => {
     return inquirer.prompt([
         {
@@ -134,13 +136,13 @@ const promptUser = () => {
 
     ])
 }
+// Initiates the command line prompts, then sends the data to the imported generateREADME module
 
 promptUser()
     .then(data => {
         data.badge = licenseBadges[data.license]
-        console.log(data)
         const readmeText = generateREADME(data)
-        fs.writeFile('./README.md', readmeText, err => {
+        fs.writeFile('./dist/README.md', readmeText, err => {
             if (err) throw new Error(err)
         })
     })

@@ -1,34 +1,11 @@
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
-    
-# sfgfs
+# Professional README.md Generator
 
 ## Description
-safhgs
+This command line application provides developers the ability to automatically generate a professional README.md file. 
 
-## Table of Contents 
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
-- [Test](#tests)
-- [Questions](#questions)
+## Built With
+- node.js
+- Inquirer
 
-## Installation
-safg
-
-## Usage
-sfdh
-
-## License
-This project holds the ISC license.
-
-## Contribution
-asfgh
-
-## Testing
-safgh
-
-## Questions
-- Github: safg - https://github.com/safg
-- If you would like to ask further questions that are not answered on my Github or this README, you can reach me through email at safg
-    
+## Contributor(s)
+- Lakelon Bailey

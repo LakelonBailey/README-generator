@@ -1,9 +1,10 @@
+// Generates a structured README.md file with given information.
 module.exports = READMEdata => {
     const {badge, title, description, install_instructions, usage_info, contrib_guide, test_instructions, license, github, email} = READMEdata;
 
 
     return`${badge}
-    
+
 # ${title}
 
 ## Description
