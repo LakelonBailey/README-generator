@@ -1,32 +1,32 @@
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
-# Example README generation for video
+# example title
 
 ## Description
-description text
+example project description
 
 ## Table of Contents 
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributing](#contributing)
-- [Test](#tests)
+- [Contribution](#contribution)
+- [Testing](#testing)
 - [Questions](#questions)
 
 ## Installation
-installation text
+example installation instructions
 
 ## Usage
-usage text
+example usage instructions
 
 ## License
 This project holds the ISC license.
 
 ## Contribution
-contribution text
+example contribution instructions
 
 ## Testing
-testing instructions text
+example testing instructions
 
 ## Questions
 - Github: LakelonBailey - https://github.com/LakelonBailey
